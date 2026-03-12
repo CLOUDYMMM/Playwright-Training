@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "\"# WLB\"",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:codegen": "playwright codegen 'https://demo-login-workshop.vercel.app'",
+    "report": "playwright show-report"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
